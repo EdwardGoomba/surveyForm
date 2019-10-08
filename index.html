@@ -4,55 +4,77 @@
 <head>
   <title>Donut Experience - Afterthoughts</title>
   <link rel="stylesheet" href="style.css">
-  <link href='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'>
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
 </head>
 
 <body>
-  <header>
-    <h1 id='title'>Donut Experience</h1>
-    <p id='description'>You tasted our donuts. We are committed to making the best donuts. Let us know how we can
-      improve.</p>
-  </header>
-  <main>
-    <form id='survey-form'>
-      <label id='name-label' for='name'>Name: </label>
-      <input type='text' id='name' name='name' required placeholder='Name please'>
-      <label id='email-label' for='email'>Email: </label>
-      <input type='email' id='email' name='email' required placeholder='Email please'>
-      <label id='number-label' for='donutsEaten'>Donuts Eaten (min 1, max 12):</label>
-      <input type='number' id='donutsEaten' required min="1" max="12" placeholder='Number of donuts enjoyed'>
-      <label>Overall Experience</label>
-      <select id='experience'>
-        <option value='fantastic'>Fantastic</option>
-        <option value='great'>Great</option>
-        <option value='okay'>It was Okay</option>
-        <option value='meh'>Meh</option>
-        <option value='bad'>Bad</option>
-        <option value='dishonor'>Dishonor! Dishonor on you! Dishonor on your cow!</option>
-      </select>
-      <p>Phase Group</p>
-      <input type="radio" id="cocoonGroup" name="phaseGroup" value="cocoonGroup">
-      <label for="cocoonGroup">Cocoon Group</label>
+  <div class='container'>
+    <header class='header'>
+      <h1 id='title' class='title'>Donut Experience</h1>
+      <p id='description' class='description'>You tasted our donuts.</p>
+      <p class='description'>We are committed to making the best donuts.</p>
+      <p class='description'>Let us know how we can
+        improve.</p>
+    </header>
+    <main class='formContainer'>
+      <form id='survey-form'>
+        <div class='formSection'>
+          <div class='formGroup'>
+            <label id='name-label' for='name'>Name: </label>
+            <input type='text' id='name' name='name' required placeholder='Name please'>
+          </div>
+          <div class='formGroup'>
+            <label id='email-label' for='email'>Email: </label>
+            <input type='email' id='email' name='email' required placeholder='Email please'>
+          </div>
+        </div>
+        <div class='formSection'>
+          <div class='formGroup'>
+            <label id='number-label' for='donutsEaten'>Donuts Eaten (min 1, max 12):</label>
+            <input type='number' id='donutsEaten' required min="1" max="12" placeholder='Number of donuts enjoyed'>
+          </div>
+          <div class='formGroup'>
+            <label>Overall Experience</label>
+            <select id='experience'>
+              <option value='fantastic'>Fantastic</option>
+              <option value='great'>Great</option>
+              <option value='okay'>It was Okay</option>
+              <option value='meh'>Meh</option>
+              <option value='bad'>Bad</option>
+              <option value='dishonor'>Dishonor! Dishonor on you! Dishonor on your cow!</option>
+            </select>
+          </div>
+        </div>
+        <div class='formSection'>
+          <p>Phase Group</p>
+          <input type="radio" id="cocoonGroup" name="phaseGroup" value="cocoonGroup">
+          <label for="cocoonGroup">Cocoon Group</label>
 
-      <input type="radio" id="rangerGroup" name="phaseGroup" value="rangerGroup">
-      <label for="rangerGroup">Ranger Group</label>
+          <input type="radio" id="rangerGroup" name="phaseGroup" value="rangerGroup">
+          <label for="rangerGroup">Ranger Group</label>
 
-      <input type="radio" id="toadGroup" name="phaseGroup" value="toadGroup">
-      <label for="toadGroup">Toad Group</label>
-      <p>Which Donuts did you try this year?</p>
-      <input type="checkbox" id="scaleyRotworth" name="scaleyRotworth">
-      <label for="scaleyRotworth">Scaley Rotworth</label>
-      <input type="checkbox" id="devilsEye" name="devilsEye">
-      <label for="devilsEye">Devils Eye</label>
-      <input type="checkbox" id="witchesPot" name="witchesPot">
-      <label for="witchesPot">Witches Pot</label>
-      <input type="checkbox" id="sprinkles" name="sprinkles">
-      <label for="sprinkles">Sprinkles</label>
-      <label id='improve-label' for='improve'>Anything we can improve for next year?</label>
-      <textarea id='improve'></textarea>
-      <button type='submit' id='submit'>Submit Feedback</button>
-    </form>
-  </main>
+          <input type="radio" id="toadGroup" name="phaseGroup" value="toadGroup">
+          <label for="toadGroup">Toad Group</label>
+        </div>
+        <div class='formSection'>
+          <p>Which Donuts did you try this year?</p>
+          <input type="checkbox" id="scaleyRotworth" name="scaleyRotworth">
+          <label for="scaleyRotworth">Scaley Rotworth</label>
+          <input type="checkbox" id="devilsEye" name="devilsEye">
+          <label for="devilsEye">Devils Eye</label>
+          <input type="checkbox" id="witchesPot" name="witchesPot">
+          <label for="witchesPot">Witches Pot</label>
+          <input type="checkbox" id="sprinkles" name="sprinkles">
+          <label for="sprinkles">Sprinkles</label>
+        </div>
+        <div class='formSection'>
+          <label id='improve-label' for='improve'>Anything we can improve for next year?</label>
+          <textarea id='improve'></textarea>
+        </div>
+        <button type='submit' id='submit'>Submit Feedback</button>
+      </form>
+    </main>
+  </div>
 </body>
 
 </html>
