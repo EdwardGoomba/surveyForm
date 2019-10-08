@@ -20,22 +20,22 @@
       <form id='survey-form'>
         <div class='formSection'>
           <div class='formGroup'>
-            <label id='name-label' for='name'>Name: </label>
-            <input type='text' id='name' name='name' required placeholder='Name please'>
+            <label id='name-label' for='name' class='groupTitle'>Name: </label>
+            <input type='text' id='name' name='name' class='input' required placeholder='Name please'>
           </div>
           <div class='formGroup'>
-            <label id='email-label' for='email'>Email: </label>
-            <input type='email' id='email' name='email' required placeholder='Email please'>
+            <label id='email-label' for='email' class='groupTitle'>Email: </label>
+            <input type='email' id='email' name='email' class='input' required placeholder='Email please'>
           </div>
         </div>
         <div class='formSection'>
           <div class='formGroup'>
-            <label id='number-label' for='donutsEaten'>Donuts Eaten (min 1, max 12):</label>
-            <input type='number' id='donutsEaten' required min="1" max="12" placeholder='Number of donuts enjoyed'>
+            <label id='number-label' for='donutsEaten' class='groupTitle'>Donuts Eaten (min 1, max 12):</label>
+            <input type='number' id='donutsEaten' class='input' min="1" max="12" placeholder='Number of donuts enjoyed'>
           </div>
           <div class='formGroup'>
-            <label>Overall Experience</label>
-            <select id='experience'>
+            <label class='groupTitle'>Overall Experience</label>
+            <select id='experience' class='input'>
               <option value='fantastic'>Fantastic</option>
               <option value='great'>Great</option>
               <option value='okay'>It was Okay</option>
@@ -46,15 +46,24 @@
           </div>
         </div>
         <div class='formSection'>
-          <p>Phase Group</p>
-          <input type="radio" id="cocoonGroup" name="phaseGroup" value="cocoonGroup">
-          <label for="cocoonGroup">Cocoon Group</label>
+          <div class='formGroup'>
+            <p class='groupTitle'>Phase Group</p>
+            <ul class='list'>
+              <li class='listItem'>
+                <input type="radio" id="cocoonGroup" name="phaseGroup" value="cocoonGroup">
+                <label for="cocoonGroup">Cocoon Group</label>
+              </li>
+              <li class='listItem'>
+                <input type="radio" id="rangerGroup" name="phaseGroup" value="rangerGroup">
+                <label for="rangerGroup">Ranger Group</label>
+              </li>
+              <li class='listItem'>
+                <input type="radio" id="toadGroup" name="phaseGroup" value="toadGroup">
+                <label for="toadGroup">Toad Group</label>
+              </li>
+            </ul>
 
-          <input type="radio" id="rangerGroup" name="phaseGroup" value="rangerGroup">
-          <label for="rangerGroup">Ranger Group</label>
-
-          <input type="radio" id="toadGroup" name="phaseGroup" value="toadGroup">
-          <label for="toadGroup">Toad Group</label>
+          </div>
         </div>
         <div class='formSection'>
           <p>Which Donuts did you try this year?</p>
@@ -71,7 +80,7 @@
           <label id='improve-label' for='improve'>Anything we can improve for next year?</label>
           <textarea id='improve'></textarea>
         </div>
-        <button type='submit' id='submit'>Submit Feedback</button>
+        <button type='submit' id='submit' class='submitBtn'>Submit Feedback</button>
       </form>
     </main>
   </div>

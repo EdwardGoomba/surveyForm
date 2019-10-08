@@ -24,7 +24,7 @@ body {
 .header {
   background: #faded5;
   box-shadow: 10px 5px 5px rgba(66, 133, 244, .2);
-  width: 50vw;
+  max-width: 600px;
   padding-left: 1rem;
   margin-bottom: 2rem;
 }
@@ -41,15 +41,45 @@ body {
 .formSection {
   background: #d3c3d4;
   box-shadow: 10px 5px 5px rgba(66, 133, 244, .2);
-  width: 50vw;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  max-width: 600px;
   padding-left: 1rem;
   margin-bottom: 1rem;
+  padding: 1rem;
 }
 
 .formGroup {
-  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
   margin-bottom: 1rem;
+}
+
+.groupTitle {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.input {
+  width: 200px;
+  border: none;
+  height: 40px;
+  font-size: 1.5rem;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.listItem {
+  margin-bottom: 0.5rem;
+}
+
+.submitBtn {
+  box-shadow: 10px 5px 5px rgba(66, 133, 244, .2);
+  border: none;
+  padding: 1rem;
+  font-size: 1rem;
 }
